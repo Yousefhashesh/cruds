@@ -1,0 +1,73 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+}
+
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+ letter-spacing: 1px;
+ 
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+.container
+{
+  height: 100vh;
+}
+
+
+input:focus
+{
+ background-color: black;
+ color: wheat;
+
+}
+#total::before
+{
+  content: "total:";
+}
+.container input
+{
+margin-bottom: 1rem;
+height: 35px;
+border-radius: 8px;
+}
+.container small
+{
+  height: 35px;
+  border-radius: 16px;
+  padding-top: 8px;
+}
+.container #create, .container #update
+{
+  margin-bottom: 12px;
+}
+.container #deleteAll
+{
+  margin: 20px 0;
+  display: none;
+}
+.container table
+{
+  margin-top: 15px;
+}
+/* .count
+{
+  position: relative;
+  top:50px;
+display: flex;
+  width: 120px;
+  height: 120px;
+  font-size: 90px;
+  border-radius: 50%;
+  box-shadow: -1px 0px 10px 10px #57bcc1;
+  background-color:white;
+justify-content: center;
+ align-items: center;
+  margin: 0 auto;
+} */
