@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>CRUDS</title>
+</head>
+<body class="bg-dark">
+  
+  <div class="container text-danger  ">
+
+<div class="head ">
+<h2>
+    cruds
+</h2>
+<p> 
+    mangement system app
+</p>
+</div>
+
+<div class="inputs row align-content-space-between " >
+
+<input type="text" name="" id="title" placeholder="title" >
+
+<input type="number" name="" id="price" placeholder="price" class="col-2 ">
+<input type="number" name="" id="taxes" placeholder="taxes" class="col-2">
+<input type="number" name="" id="ads" placeholder="advertisment" class="col-2">
+<input type="number" name="" id="discount" placeholder="discount" class="col-2">
+
+<small class="col-4 text-light bg-danger " id="total"></small>
+
+
+<input type="number" name="" id="amount" placeholder="amount" class="col-6 ">
+<input type="text" name="" id="category" placeholder="category" class="col-6">
+<div class=" btn btn-primary  " id="create">create category</div>
+
+</div>
+<div class="outputs row justify-content-around " >
+
+
+          <input type="search" name="" id="search" placeholder="search"  >
+                  <div class="btn btn-primary col-4" onclick="search(this.id)" id="searchTitle">
+                        search by title
+                  </div>
+                        <div class="btn btn-primary col-4 "onclick="search(this.id)" id="searchCategory">
+                          search by category
+                        </div>
+
+                        <div class="btn btn-secondary" id="deleteAll">
+                        delete All 
+                        </div>
+<table>
+  <tr>
+    <th>
+      id
+    </th>
+    <th>title</th>
+    <th>price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discount</th>
+    <th>total</th>
+    <th>amount</th>
+    <th>category</th>
+    <th>update</th>
+    <th>delete</th>
+  </tr>
+  <tbody id="tbody">
+    
+  </tbody>
+  
+</table>
+  </div>
+<!-- <div class="count">
+  10
+</div> -->
+
+<script src="/js/index.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
